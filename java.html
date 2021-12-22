@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script type="text/javascript">
+			$("document").ready(function () {
+				$("input[type='submit']").click(function(){
+					var num =$("input[name='dd']:checked").val()
+					if (num==3) {
+						$(".r").css("color","red")
+						$(".f").css("color","green")
+					}
+					else{
+						$("*").css("color","yellow")
+					}
+				})
+				
+				
+			})
+		</script>
+
+</head>
+<body>
+<div class="r"><input type="radio" name="dd" value="1">1<br></div>
+<div class="r"><input type="radio" name="dd" value="2">2<br>
+<div class="f"><input type="radio" name="dd" value="3">3<br>
+<div class="r"><input type="radio" name="dd" value="4">4<br>
+<input type="submit" name="check" id="ww">
+</body>
+</html>
